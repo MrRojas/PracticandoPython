@@ -1,0 +1,3 @@
+from MonteC import *
+
+ar()

@@ -1,3 +1,4 @@
+import time
 from MonteC import *
 
 x = MonteC()
@@ -11,13 +12,20 @@ print ("metodo Monte Carlos, by: Armando Rojas")
 aleatorioD = 0
 #aleatorio flecha
 aleatorioF = 0
-#aleatorio Diana y flecha 
-aleatorioDF = 0
+
+generador1 = random.Random("gato")
+
+generador2 = random.Random("perro")
 
 for i in range(0,num):
-			
-	aleatorioD = random.random()
-	aleatorioF = random.random()
+
+
+
+	
+
+	aleatorioD = generador1.random()
+
+	aleatorioF = generador2.random()
 
 
 	print("##################")

@@ -3,6 +3,7 @@
 # by: Armando Rojas 
 import random
 
+
 class MonteC():
 	"""docstring for MonteC"""
 	def __init__(self):

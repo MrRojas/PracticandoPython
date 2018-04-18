@@ -53,18 +53,29 @@ class MonteC():
 				self.tabla['intervalo'].append( [ self.tabla['intervalo'][anterior][1] , self.tabla['f'][anterior2] ] )
 		pass
 
-	def lanzamiento(self , cantidad): 
-		# aleatorio diana
-		aleatorioD = 0
-		#aleatorio flecha
-		aleatorioF = 0
-		#aleatorio Diana y flecha 
-		aleatorioDF = 0
+	def buscar(self , num):
 
-		for i in range(0,cantidad+1):
+		indice = -1
+		encontrado = -1
+
+		for i in self.tabla['intervalo']:
+
+			indice = indice + 1
+
+
+			if ( num >= i[0]   ) and ( num <= i[1]  ):
+				encontrado = indice
+
 			
-			aleatorioD = random.random()
-			aleatorioF = random.random()
-			aleatorioDF = random.random()
+		return encontrado
+
+	def promedio( self , num1 , num2  ):
+		return (num1 + num2) / 2
+
+
+
+
+
+		
 		
 

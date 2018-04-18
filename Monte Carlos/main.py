@@ -2,7 +2,10 @@ from MonteC import *
 
 x = MonteC()
 
-x.hola()
-x.addTabla()
+print ("Probabilidad de lanzamiento de Diana con")
+print ("metodo Monte Carlos, by: Armando Rojas")
 
-print (x.tabla)
+x.lanzamiento(3)
+
+
+

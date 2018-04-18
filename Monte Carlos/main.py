@@ -1,3 +1,8 @@
 from MonteC import *
 
-ar()
+x = MonteC()
+
+x.hola()
+x.addTabla()
+
+print (x.tabla)
